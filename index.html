@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Home section -->
+    <section class="home flex items-center justify-center h-auto md:h-[100vh]">
+      <div class="container mx-auto flex flex-col-reverse md:flex-row py-10">
+        <div class="text-section w-full p-5 md:p-20 md:w-[60%]">
+          <p class="text-2xl my-5">Hello!</p>
+          <p class="text-xl my-5">
+            I'm
+            <span class="text-4xl text-red-500 font-bold">
+              Nitish Rajbongshi
+            </span>
+          </p>
+
+          <!-- Profile photo will visible only on small screen -->
+          <div
+            class="image-section w-auto p-10 flex justify-center content-center md:hidden"
+          >
+            <div class="relative inline-block w-auto h-auto p-2">
+              <img
+                class="shadow-lg"
+                src="assets/image/photo.jpg"
+                alt="profile photo"
+                height="300rem"
+                width="260rem"
+              />
+            </div>
+          </div>
+
+          <p class="border-b-2 border-red-200 py-2">Bio</p>
+          <p class="my-4 text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            alias nesciunt nam incidunt, sed eum debitis. Tenetur, minima
+            similique.
+          </p>
+          <div class="icon flex text-red-500">
+            <a
+              href="https://github.com/NitishRajbongshi"
+              target="_blan w-[70%]k"
+              class="me-2"
+              ><i class="fa-brands fa-github fa-2x"></i
+            ></a>
+            <a
+              href="https://twitter.com/NitishRajbongs5"
+              target="_blank"
+              class="me-2"
+              ><i class="fa-brands fa-twitter fa-2x"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/nitish.raibongshi/"
+              target="_blank"
+              class="me-2"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
+            <a href="" target="_blank" class="me-2"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </div>
+          <div class="download-resume my-5">
+            <button class="bg-red-500 text-white px-6 py-2">
+              <a href="assets/cv/NitishRajbongshi.pdf" target="_blank"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+        <div
+          class="image-section w-full p-10 hidden md:flex md:items-center md:justify-center md:w-[40%]"
+        >
+          <div class="relative w-auto h-auto p-2">
+            <img
+              class="shadow-lg"
+              src="assets/image/photo.jpg"
+              alt="profile photo"
+              height="300rem"
+              width="260rem"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      class="about flex flex-col items-center justify-center h-auto md:h-full"
+    >
+      <div class="container mx-auto py-10">
+        <div class="text-center">
+          <h1 class="text-2xl md:text-4xl text-red-500">
+            <span class="border-b-4 border-red-500">About Me</span>
+          </h1>
+        </div>
+        <div class="relative content-part md:flex my-5 p-10">
+          <div class="hidden md:block side-image w-[30%]">
+            <div class="side-image-container flex justify-center">
+              <img
+                class="shadow-md"
+                src="assets/image/photo1.jpg"
+                alt="side-image"
+                width="200rem"
+                height="240rem"
+              />
+            </div>
+          </div>
+          <div
+            class="text-part text-justify text-gray-500 w-full md:w-[70%] md:px-10 md:border-s-4 md:border-yellow-800"
+          >
+            <p class="pb-3">
+              My name is
+              <span class="text-xl font-bold text-red-800"
+                >Nitish Rajbongshi</span
+              ><br />I am a
+              <span class="text-lg font-bold text-red-800">Web Developer</span>
+            </p>
+            <p class="py-3">
+              I have always been passionate about computer science and
+              programming, which led me to pursue a career in this field. Over
+              the course of my academic journey, I have developed a strong
+              foundation in computer science, including a deep understanding of
+              programming languages, algorithms, and data structures. I am a
+              highly motivated individual who is constantly seeking new
+              challenges and opportunities to learn and grow.
+            </p>
+            <p class="py-3">
+              In addition to my academic achievements, I have also worked on
+              several projects, both individually and as part of a team. These
+              projects have allowed me to gain practical experience in
+              developing software applications and working with real-world data.
+              Aside from my academic pursuits, I am also an avid reader and
+              enjoy learning about new technologies and advancements in the
+              field of computer science. In the future, I hope to continue my
+              academic pursuits and pursue a career in software development. I
+              am excited about the possibilities that the future holds, and I am
+              eager to contribute to the development of innovative software
+              solutions that can make a positive impact on people's lives.
+            </p>
+            <p class="py-3">
+              Thank you for taking the time to learn more about me. If you would
+              like to get in touch, please do not hesitate to contact me via
+              <span class="text-yellow-800 font-bold">
+                <a href="mailto:nitishrajbongshi@gmail.com"
+                  >nitishrajbongshi@gmail.com</a
+                > </span
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section
+      class="education bg-gray-50 flex flex-col items-center justify-center h-auto md:h-full"
+    >
+      <div class="container mx-auto md:p-10">
+        <div class="text-center my-10">
+          <h1 class="text-2xl md:text-4xl text-red-500">
+            <span class="border-b-4 border-red-500">Education</span>
+          </h1>
+        </div>
+
+        <div class="md:my-5 flex justify-start">
+          <div
+            class="w-full md:w-2/3 p-4 border-s-4 border-red-400 bg-white shadow-sm rounded-r-lg"
+          >
+            <p class="text-red-800 font-bold">class X</p>
+            <p class="text-md md:text-xl font-extrabold">
+              Bonmajha High School <span class="text-red-500">2016</span>
+            </p>
+            <p class="text-red-400">85%</p>
+          </div>
+        </div>
+
+        <div class="my-5 flex justify-end">
+          <div
+            class="w-full md:w-2/3 p-4 border-s-4 border-blue-400 bg-white shadow-sm rounded-r-lg"
+          >
+            <p class="text-blue-800 font-bold">class XII</p>
+            <p class="text-md md:text-xl font-extrabold">
+              Pub Kamrup College <span class="text-gray-500">2018</span>
+            </p>
+            <p class="text-blue-400">64%</p>
+          </div>
+        </div>
+
+        <div class="my-5 flex justify-start">
+          <div
+            class="w-full md:w-2/3 p-4 border-s-4 border-red-400 bg-white shadow-sm rounded-r-lg"
+          >
+            <p class="text-red-800 font-bold">Graduation</p>
+            <p class="text-md md:text-xl font-extrabold">
+              Pub Kamrup College <span class="text-red-500">2018 - 2021</span>
+            </p>
+            <p>B.Sc. Computer Science</p>
+            <p class="text-red-400">83%</p>
+          </div>
+        </div>
+
+        <div class="my-5 flex justify-end">
+          <div
+            class="w-full md:w-2/3 p-4 border-s-4 border-blue-400 bg-white shadow-sm rounded-r-lg"
+          >
+            <p class="text-blue-800 font-bold">Post Graduation</p>
+            <p class="text-md md:text-xl font-extrabold">
+              Tezpur University, Assam
+              <span class="text-gray-500">2021 - 2023</span>
+            </p>
+            <p>Master of Computer Application (M.C.A)</p>
+            <p class="text-blue-400">7.5 CGPA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section
+      class="skills flex flex-col items-center justify-center h-auto md:h-full"
+    >
+      <div class="container mx-auto p-10">
+        <div class="text-center my-10">
+          <h1 class="text-2xl md:text-4xl text-red-500">
+            <span class="border-b-4 border-red-500">Tecknical Skills</span>
+          </h1>
+        </div>
+
+        <p
+          class="text-red-500 border-b-2 border-red-400 font-bold text-xl py-2 my-3"
+        >
+          Web Development
+        </p>
+        <div
+          class="skill-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+        >
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-green-100 text-green-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-html5 fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">HTML</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-red-100 text-red-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-css3 fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">CSS</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-yellow-100 text-yellow-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-js fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">JS</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-bootstrap fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">Bootstrap</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-violet-100 text-violet-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-css3 fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">Tailwind CSS</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-gray-100 text-gray-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-js fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">jQuery</p>
+              <p class="text-sm">Beginner</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-violet-100 text-violet-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-react fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">REACT</p>
+              <p class="text-sm">Beginner</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-pink-100 text-pink-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-node-js fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">Node JS</p>
+              <p class="text-sm">Beginner</p>
+            </div>
+          </div>
+        </div>
+
+        <p
+          class="text-blue-500 border-b-2 border-blue-400 font-bold text-xl py-2 my-3"
+        >
+          Programming
+        </p>
+        <div
+          class="skill-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+        >
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-c fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">C Programming</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-violet-100 text-violet-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-c fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">C++</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-yellow-100 text-yellow-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-js fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">JS</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-js fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">PHP</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p
+          class="text-yellow-500 border-b-2 border-yellow-400 font-bold text-xl py-2 my-3"
+        >
+          DataBase
+        </p>
+        <div
+          class="skill-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+        >
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-m fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">MySQL</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-red-100 text-red-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-s fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">SQL</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-php fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">PHP myAdmin</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+        </div>
+
+        <p
+          class="text-green-500 border-b-2 border-green-400 font-bold text-xl py-2 my-3"
+        >
+          Other Technology
+        </p>
+        <div
+          class="skill-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+        >
+        
+        <div
+        class="skill-card py-2 shadow-md flex justify-center items-center bg-red-100 text-red-700"
+        >
+        <div class="icon w-[30%] flex justify-center">
+          <span><i class="fa-brands fa-github fa-2x md:fa-3x"></i></span>
+        </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">GitHub</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+          
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-git fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">Git</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-purple-100 text-purple-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-a fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">AJAX</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card py-2 shadow-md flex justify-center items-center bg-red-100 text-red-700"
+          >
+            <div class="icon w-[30%] flex justify-center">
+              <span><i class="fa-brands fa-wordpress fa-2x md:fa-3x"></i></span>
+            </div>
+            <div class="content-part w-[70%]">
+              <p class="text-lg font-bold">WordPress</p>
+              <p class="text-sm">Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section
+      class="projects flex bg-pink-50 flex-col items-center justify-center h-auto md:h-full"
+    >
+      <div class="container mx-auto md:p-10">
+        <div class="text-center my-10">
+          <h1 class="text-2xl md:text-4xl text-red-500">
+            <span class="border-b-4 border-red-500">My Projects</span>
+          </h1>
+        </div>
+        <div class="project-container md:flex md:flex-row md:justify-center md:items-center">
+          <div class="first-column w-full md:w-[50%] px-1 md:p-5">
+            <div class="project-template my-4 p-10 w-full bg-white text-red-500 shadow-md">
+              <div class="icon-part text-center my-5 flex justify-center">
+                <img src="assets/project-illustration/student.jpg" alt="mentoring" width="200rem">
+              </div>
+              <div class="info-part">
+                <h1 class="text-2xl font-bold">Online Student Mentoring System</h1>
+                <p class="text-sm font-semibold">A Minor Project, MCA 3rd Sem</p>
+                <p class="text-sm text-red-300">Tezpur University - 2022</p>
+                <p class="py-5">A online mentoring system to make the communication and mentoring between mentor and mentee more simple and easy.</p>
+              </div>
+              <div class="use-skills py-3">
+                <p class="text-md font-bold">Used technology</p>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">HTML</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">CSS</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">JS</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">jQuery</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">Bootstrap</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">PHP</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">SQL</span>
+              </div>
+              <div>
+                <button class="bg-red-100 px-5 py-2 font-bold">
+                  <a href="">Github link</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-template my-4 p-10 w-full bg-white text-blue-500 shadow-md">
+              <div class="icon-part text-center my-5 flex justify-center">
+                <img src="assets/project-illustration/voting.jpg" alt="voting" width="200rem">
+              </div>
+              <div class="info-part">
+                <h1 class="text-2xl font-bold">Online Voting System</h1>
+                <p class="text-sm font-semibold">A Major Project, B.Sc. 6th sem</p>
+                <p class="text-sm text-blue-300">Pub Kamrup College - 2018</p>
+                <p class="py-5">A simple online voting system where an authorized person can vote a candidate for a role.</p>
+              </div>
+              <div class="use-skills py-3">
+                <p class="text-md font-bold">Used technology</p>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">HTML</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">CSS</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">JS</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">jQuery</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">Bootstrap</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">PHP</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">SQL</span>
+              </div>
+              <div>
+                <button class="bg-blue-100 px-5 py-2 font-bold">
+                  <a href="">Github link</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="second-column w-full md:w-[50%] px-1 md:p-5">
+            <div class="hidden md:block my-56"></div>
+            <div class="project-template my-4 p-10 w-full bg-white text-blue-500 shadow-md">
+              <div class="icon-part text-center my-5 flex justify-center">
+                <img src="assets/project-illustration/portfolio.jpg" alt="voting" width="200rem">
+              </div>
+              <div class="info-part">
+                <h1 class="text-2xl font-bold">A Personal portfolio</h1>
+                <p class="text-sm font-semibold">A mini Project, 2023</p>
+                <p class="py-5">A simple profolio website to express me and my works to the world!</p>
+              </div>
+              <div class="use-skills py-3">
+                <p class="text-md font-bold">Used technology</p>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">HTML</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">CSS</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-blue-100 px-3">Tailwind CSS</span>
+              </div>
+              <div>
+                <button class="bg-blue-100 px-5 py-2 font-bold">
+                  <a href="">Github link</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-template my-4 p-10 w-full bg-white text-red-500 shadow-md">
+              <div class="icon-part text-center my-5 flex justify-center">
+                <img src="assets/project-illustration/cms.jpg" alt="mentoring" width="200rem">
+              </div>
+              <div class="info-part">
+                <h1 class="text-2xl font-bold">A Static Website</h1>
+                <p class="text-sm font-semibold">A Mini Project, 2021</p>
+                <p class="py-5">A simple multi-pages static website for a tuition center startup.</p>
+              </div>
+              <div class="use-skills py-3">
+                <p class="text-md font-bold">Used technology</p>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">HTML</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">CSS</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">JS</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">jQuery</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">Bootstrap</span>
+                <span class="inline-block mt-2 py-1 text-sm font-bold mr-2 bg-red-100 px-3">Google form</span>
+              </div>
+              <div>
+                <button class="bg-red-100 px-5 py-2 font-bold inline-block me-2">
+                  <a href="">Github link</a>
+                </button>
+                <button class="bg-red-100 px-5 py-2 font-bold inline-block me-2">
+                  <a href="">Preview</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section
+      class="contact bg-gray-50 flex items-center justify-center h-auto md:h-full"
+    >
+      <div class="container mx-auto flex flex-col-reverse md:flex-row py-10">
+        <div class="text-section w-full p-5 md:p-20 md:w-[60%]">
+          <p
+            class="text-2xl text-red-500 md:text-4xl my-5 border-b-2 border-red-500"
+          >
+            Contact Me
+          </p>
+          <p class="text-gray-800 my-10">
+            Thank you for taking the time to learn more about me and my skills.
+            If you would like to get in touch, please do not hesitate to contact
+            me via the details mention below.
+          </p>
+          <div
+            class="skill-card my-3 py-2 shadow-sm flex justify-center items-center bg-red-50 text-red-500"
+          >
+            <div class="icon w-[10%] flex justify-center">
+              <span><i class="fa-solid fa-phone md:fa-2x"></i></span>
+            </div>
+            <div class="content-part w-[90%]">
+              <p class="text-sm">Call me</p>
+              <p class="text-lg font-bold">+91 6001020913</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card my-3 py-2 shadow-sm flex justify-center items-center bg-red-50 text-red-500"
+          >
+            <div class="icon w-[10%] flex justify-center">
+              <span><i class="fa-brands fa-whatsapp md:fa-2x"></i></span>
+            </div>
+            <div class="content-part w-[90%]">
+              <p class="text-sm">WhatsApp me</p>
+              <p class="text-lg font-bold">+91 8473061878</p>
+            </div>
+          </div>
+
+          <div
+            class="skill-card my-3 py-2 shadow-sm flex justify-center items-center bg-red-50 text-red-500"
+          >
+            <div class="icon w-[10%] flex justify-center">
+              <span><i class="fa-solid fa-envelope md:fa-2x"></i></span>
+            </div>
+            <div class="content-part w-[90%]">
+              <p class="text-sm">Email me</p>
+              <a
+                href="mailto:nitishrajbongshi@gmail.com"
+                class="text-lg font-bold"
+                >nitishrajbongshi@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="contact-image-section w-full p-10 hidden md:flex md:items-center md:justify-center md:w-[40%]"
+        >
+          <div class="relative w-auto h-auto p-2">
+            <img
+              class=""
+              src="assets/image/contact.png"
+              alt="profile photo"
+              height="500rem"
+              width="500rem"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-blue-50 text-black p-10 text-center">
+      <p class="text-red-500">My portfolio, 2023</p>
+    </footer>
+  </body>
+</html>
