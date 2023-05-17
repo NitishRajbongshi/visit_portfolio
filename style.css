@@ -1,64 +1,78 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --primary-color: hsl(236, 90%, 20%);
-    --secondary-color: hsla(236, 72%, 47%, 0.642);
-    --less-active-color: hsl(0, 82%, 58%);
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "IBM Plex Sans", sans-serif;
-  }
-  
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
-  
-  .home {
-    background: rgb(255, 245, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 245, 255, 1) 0%,
-      rgba(241, 251, 255, 1) 47%,
-      rgba(234, 237, 255, 1) 100%
-    );
-  }
-  
-  .image-section div::before {
-    content: "";
-    position: absolute;
-    width: 4rem;
-    height: 4rem;
-    border-bottom: 5px solid red;
-    border-left: 5px solid red;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .image-section div::after {
-    content: "";
-    position: absolute;
-    width: 4rem;
-    height: 4rem;
-    border-top: 5px solid red;
-    border-right: 5px solid red;
-    top: 0;
-    right: 0;
-  }
-  
-  .side-image-container img {
-    border-radius: 3rem 1rem 3rem 1rem;
-  }
-  
-  section.about {
-    background: rgb(255, 246, 246);
-  }
-  
-  section.skills {
-    background: rgb(243, 244, 247);
-  }
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: hsl(236, 90%, 20%);
+  --secondary-color: hsla(236, 72%, 47%, 0.642);
+  --less-active-color: hsl(0, 82%, 58%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.home {
+  background: rgb(255, 245, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 245, 255, 1) 0%,
+    rgba(241, 251, 255, 1) 47%,
+    rgba(234, 237, 255, 1) 100%
+  );
+}
+
+.image-section div::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-bottom: 5px solid red;
+  border-left: 5px solid red;
+  bottom: 0;
+  left: 0;
+}
+
+.image-section div::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-top: 5px solid red;
+  border-right: 5px solid red;
+  top: 0;
+  right: 0;
+}
+
+span.goal,
+span.highlight {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+}
+
+/* span.imprt {
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+  } */
+.side-image-container img {
+  border-radius: 3rem 1rem 3rem 1rem;
+}
+
+section.about {
+  background: rgb(253, 254, 255);
+}
+
+section.skills {
+  background: rgb(243, 244, 247);
+}
