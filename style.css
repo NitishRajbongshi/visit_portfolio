@@ -61,10 +61,6 @@ span.highlight {
   padding: 0.2rem 0.6rem;
 }
 
-/* span.imprt {
-    display: inline-block;
-    padding: 0.1rem 0.3rem;
-  } */
 .side-image-container img {
   border-radius: 3rem 1rem 3rem 1rem;
 }
@@ -73,7 +69,12 @@ section.about {
   background: rgb(253, 254, 255);
 }
 
-section.skills {
+section.sliding {
+  display: none;
+}
+
+section.skills,
+section.sliding {
   background: rgb(243, 244, 247);
 }
 
@@ -88,4 +89,10 @@ p.timeline::before {
   top: 0.2rem;
   left: -1.55rem;
   background: red;
+}
+
+@media (min-width: 768px) {
+  section.sliding {
+    display: block;
+  }
 }

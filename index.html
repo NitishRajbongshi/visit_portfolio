@@ -13,6 +13,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="style.css" />
     <title>My portfolio</title>
@@ -170,9 +172,341 @@
       </div>
     </section>
 
+    <!-- Sliding section -->
+    <section
+      class="sliding font-bold min-h-[50rem]"
+    >
+    <div class="container mx-auto py-8">
+        <div class="flex flex-col justify-center md:flex-row">
+            <button id="button1" class="text-2xl text-blue-500 hover:border-b-2 hover:border-blue-700  font-bold py-2 px-4 mx-2 sm:my-1">Education</button>
+            <button id="button2" class="text-2xl text-green-500 hover:border-b-2 hover:border-green-700  font-bold py-2 px-4 mx-2 sm:my-1">Skills</button>
+            <button id="button3" class="text-2xl text-red-500 hover:border-b-2 hover:border-red-700  font-bold py-2 px-4 mx-2 sm:my-1">Experiences</button>
+        </div>
+
+        <div id="content" >
+            <div id="content1" class="hidden">
+                <div class="container mx-auto px-10">
+                    <div class="text-center my-4">
+                      <h1 class="text-2xl md:text-4xl text-red-500">
+                        <span class="highlight bg-red-500 text-white me-1">Edu</span>cation
+                      </h1>
+                    </div>
+            
+                    <div class="md:my-5 flex justify-start">
+                      <div
+                        class="w-full md:w-2/3 p-4 border-s-4 border-blue-400 bg-white shadow-sm rounded-r-lg hover:shadow-md"
+                      >
+                        <p class="text-blue-800 font-bold">Post Graduation</p>
+                        <p class="text-md md:text-xl font-extrabold">
+                          Tezpur University, Assam
+                          <span class="text-gray-500">2021 - 2023</span>
+                        </p>
+                        <p>Master of Computer Application (M.C.A)</p>
+                        <p class="text-blue-400">CGPA - 7.5 / 10</p>
+                      </div>
+                    </div>
+            
+                    <div class="my-5 flex justify-end">
+                      <div
+                        class="w-full md:w-2/3 p-4 border-s-4 border-red-400 bg-white shadow-sm rounded-r-lg hover:shadow-md"
+                      >
+                        <p class="text-red-800 font-bold">Graduation</p>
+                        <p class="text-md md:text-xl font-extrabold">
+                          Pub Kamrup College <span class="text-red-500">2018 - 2021</span>
+                        </p>
+                        <p>B.Sc. Computer Science</p>
+                        <p class="text-red-400">Percentage - 83%</p>
+                      </div>
+                    </div>
+            
+                    <div class="my-5 flex justify-start">
+                      <div
+                        class="w-full md:w-2/3 p-4 border-s-4 border-blue-400 bg-white shadow-sm rounded-r-lg hover:shadow-md"
+                      >
+                        <p class="text-blue-800 font-bold">class XII</p>
+                        <p class="text-md md:text-xl font-extrabold">
+                          Pub Kamrup College <span class="text-gray-500">2018</span>
+                        </p>
+                        <p class="text-blue-400">Percentage - 64%</p>
+                      </div>
+                    </div>
+            
+                    <div class="my-5 flex justify-end">
+                      <div
+                        class="w-full md:w-2/3 p-4 border-s-4 border-red-400 bg-white shadow-sm rounded-r-lg hover:shadow-md"
+                      >
+                        <p class="text-red-800 font-bold">class X</p>
+                        <p class="text-md md:text-xl font-extrabold">
+                          Bonmajha High School <span class="text-red-500">2016</span>
+                        </p>
+                        <p class="text-red-400">Percentage - 85%</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div id="content2" class="hidden">
+                <div class="container mx-auto px-10">
+                    <div class="text-center my-4">
+                      <h1 class="text-2xl md:text-4xl text-red-500">
+                        Technical <span class="highlight bg-red-500 text-white">Skills</span>
+                      </h1>
+                    </div>
+                    <div class="block md:flex md:justify-center md:items-start">
+                      <div class="w-full p-4 border-s-2 border-red-300 md:w-[50%]">
+                        <p class="timeline relative text-red-500 font-bold text-sm my-3">
+                          <span><i class="fa-solid fa-palette me-2"></i></span> Front-End
+                          Technologies
+                        </p>
+                        <div
+                          class="skill-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
+                        >
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-green-100 text-green-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-html5 fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">HTML</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-red-100 text-red-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-css3 fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">CSS</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-yellow-100 text-yellow-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-js fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">JS</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span
+                                ><i class="fa-brands fa-bootstrap fa-2x md:fa-3x"></i
+                              ></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">Bootstrap</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-violet-100 text-violet-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-css3 fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">Tailwind CSS</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-gray-100 text-gray-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-js fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">jQuery</p>
+                              <p class="text-xs">Beginner</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-violet-100 text-violet-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-react fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">REACT</p>
+                              <p class="text-xs">Beginner</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-red-100 text-red-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span
+                                ><i class="fa-brands fa-wordpress fa-2x md:fa-3x"></i
+                              ></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">WordPress</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <p class="timeline relative text-pink-500 font-bold text-sm my-3">
+                          <span><i class="fa-solid fa-database me-2"></i></span> DataBase
+                          Technologies
+                        </p>
+                        <div
+                          class="skill-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
+                        >
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-yellow-100 text-yellow-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-m fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">MySQL</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-purple-100 text-purple-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-php fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">PHP myAdmin</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full p-4 border-s-2 border-red-300 md:w-[50%]">
+                        <div class="">
+                          <p class="timeline relative text-red-500 font-bold text-sm my-3">
+                            <span><i class="fa-solid fa-server"></i></span>
+                            Back-End Technologies
+                          </p>
+                          <div
+                            class="skill-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
+                          >
+                            <div
+                              class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+                            >
+                              <div class="icon w-[30%] flex justify-center">
+                                <span><i class="fa-brands fa-php fa-2x md:fa-3x"></i></span>
+                              </div>
+                              <div class="content-part w-[70%]">
+                                <p class="text-md font-bold">PHP</p>
+                                <p class="text-xs">Intermediate</p>
+                              </div>
+                            </div>
+                            <div
+                              class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-pink-100 text-pink-700"
+                            >
+                              <div class="icon w-[30%] flex justify-center">
+                                <span
+                                  ><i class="fa-brands fa-node-js fa-2x md:fa-3x"></i
+                                ></span>
+                              </div>
+                              <div class="content-part w-[70%]">
+                                <p class="text-md font-bold">Express JS</p>
+                                <p class="text-xs">Beginner</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="timeline relative text-blue-500 font-bold text-sm my-3">
+                          <span><i class="fa-solid fa-terminal"></i></span> Other
+                          Programming Languages
+                        </p>
+            
+                        <div
+                          class="skill-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
+                        >
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-c fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">C Programming</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-violet-100 text-violet-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-c fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">C++</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="timeline relative text-green-500 font-bold text-sm my-3">
+                          <span><i class="fa-solid fa-laptop-code"></i></span>
+                          Other Technologies 
+                        </p>
+                        <div
+                          class="skill-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
+                        >
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-red-100 text-red-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span
+                                ><i class="fa-brands fa-github fa-2x md:fa-3x"></i
+                              ></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">GitHub</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+            
+                          <div
+                            class="skill-card py-2 shadow-sm hover:shadow-md flex justify-center items-center bg-blue-100 text-blue-700"
+                          >
+                            <div class="icon w-[30%] flex justify-center">
+                              <span><i class="fa-brands fa-git fa-2x md:fa-3x"></i></span>
+                            </div>
+                            <div class="content-part w-[70%]">
+                              <p class="text-md font-bold">Git</p>
+                              <p class="text-xs">Intermediate</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div id="content3" class="hidden">
+                <h2>Button 3 Content</h2>
+                <p>This is the content for Button 3.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
     <!-- Education -->
     <section
-      class="education font-bold bg-gray-50 flex flex-col items-center justify-center h-auto md:h-full"
+      class="education font-bold bg-gray-50 flex flex-col items-center justify-center h-auto md:h-full  md:hidden"
     >
       <div class="container mx-auto md:p-10">
         <div class="text-center my-10">
@@ -236,7 +570,7 @@
 
     <!-- Skills -->
     <section
-      class="skills font-bold flex flex-col items-center justify-center h-auto md:h-full"
+      class="skills font-bold flex flex-col items-center justify-center h-auto md:h-full  md:hidden"
     >
       <div class="container mx-auto p-10">
         <div class="text-center my-10">
@@ -813,5 +1147,30 @@
     <footer class="bg-blue-50 text-black p-5 text-center">
       <p class="text-red-500 font-bold">My portfolio, 2023</p>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+            // Show initial content
+            $("#content1").removeClass("hidden");
+
+            // Button 1 click event
+            $("#button1").click(function() {
+                $("#content1").removeClass("hidden");
+                $("#content2, #content3").addClass("hidden");
+            });
+
+            // Button 2 click event
+            $("#button2").click(function() {
+                $("#content2").removeClass("hidden");
+                $("#content1, #content3").addClass("hidden");
+            });
+
+            // Button 3 click event
+            $("#button3").click(function() {
+                $("#content3").removeClass("hidden");
+                $("#content1, #content2").addClass("hidden");
+            });
+        });
+    </script>
   </body>
 </html>
